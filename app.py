@@ -3,10 +3,14 @@ from flask import Flask, jsonify
 
 app=Flask(__name__)
 
+@app.route('/' methods=['GET'])
+def get_all_student():
+	return jsonify({'message':'successfully pulled all student'})
+
 
 @app.route('/' methods=['GET'])
 def index():
-	return jsonify({'message':'welcome victor'})
+	return jsonify({'message':'welcome'})
 
 @app.route('/api/v1/students/<int:id>', methods=['GET'])
 def get_one_student()
