@@ -10,7 +10,7 @@ def index():
 
 @app.route('/api/v1/students/<int:id>', methods=['GET'])
 def get_one_student()
-	return jsonify({'message':'successful'})
+	return jsonify({'message':'successfully fetched'})
 
 
 
