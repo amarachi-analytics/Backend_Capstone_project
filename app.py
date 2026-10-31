@@ -18,7 +18,7 @@ def get_one_student()
 
 @app.route('/api/v1/students/<int:id>', methods=['PATCH'])
 def update_student()
-	return jsonify({'message':'student updated successfully'})
+	return jsonify({'message':'student updated successful'})
 
 
 
