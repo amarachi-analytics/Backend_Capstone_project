@@ -16,6 +16,10 @@ def index():
 def get_one_student()
 	return jsonify({'message':'successfully fetched student'})
 
+@app.route('/api/v1/students/<int:id>', methods=['PATCH'])
+def update_student()
+	return jsonify({'message':'student updated successful'})
+
 
 
 if __name__=='__main__':
